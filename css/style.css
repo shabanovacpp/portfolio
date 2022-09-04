@@ -58,6 +58,9 @@
 .header_mail span {
 	color: #E1DCE0;
 }
+.ava_img:hover {
+	cursor: cell;
+}
 
 .ava_text span {
 	font-weight: 600;
