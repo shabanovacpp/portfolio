@@ -55,9 +55,6 @@
 		top: -15px;
 		left: 250px;
 	}
-}
-
-@media (max-width: 480px){
 	.header_mail {
 		position: static;
 	}
@@ -114,4 +111,23 @@
 		position: relative;
 		z-index: 1;
 	}
+}
+
+@media (max-width: 352px){
+	.content .ex{
+		width: 240px;
+		height: 193px;
+		margin-bottom: 10px;
+	}
+
+	.ex:after {
+		content: '';
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		background: url(../img/clip.png) 0 0/100% no-repeat;
+		top: -15px;
+		left: 190px;
+	}
+	
 }
