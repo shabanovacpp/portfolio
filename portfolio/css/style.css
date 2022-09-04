@@ -100,9 +100,12 @@
 	border-radius: 10px;
 	text-align: center;
 	color: #686461;
+	font-size: 16px;
 }
 
-
+.ex a{
+	margin-bottom: 4px;
+}
 .example1 {
 	left: 0;
 	box-shadow: 0 4px 4px 0 rgba(0,0,0,0.25);
