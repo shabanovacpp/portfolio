@@ -1,0 +1,113 @@
+@media (max-width: 1023px){
+	.header_body, .content {
+		width: 90%;
+	}
+
+
+}
+
+
+@media (max-width: 767px){
+	.header_body, .content {
+		width: 95%;
+	}
+
+	.education,
+	.hobby,
+	.contacts,
+	.portfolio {
+		padding: 10px;
+	}
+
+}
+
+@media (max-width: 635px){
+	.hobby p,
+	.hobby_header span {
+	position: relative;
+	left: 0;
+	top: auto;
+	}
+
+	.hobby p{
+		display: inline-block;
+		margin-bottom: 15px;
+	}
+	.hobby p span {
+		position: relative;
+		top: -10px;
+		display: none;
+	}
+
+	.hobby {
+		width: auto;
+		height: auto;
+		align-self: start;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.hobby_header {
+		margin-bottom: 20px;
+	}
+
+	.hobby_web:before {
+	width: 30px;
+	height: 30px;
+	left: 175px;
+	top: 2px;
+	}
+	.hobby_basket:before {
+	width: 20px;
+	height: 20px;
+	left: 105px;
+	top: 0px;
+	}
+	.hobby_jogg:before {
+	width: 35px;
+	height: 35px;
+	left: 80px;
+	top: -5px;
+	}
+	.hobby_tennis:before {
+	width: 25px;
+	height: 25px;
+	left: 120px;
+	top: -2px;
+	}
+
+	.education,
+	.hobby,
+	.contacts,
+	.portfolio {
+		margin: 30px 10px;
+	}
+
+	.content{
+	}
+}
+
+@media (max-width: 450px){
+	.header_mail {
+		display:  none;
+	}
+	body, html {
+	}
+}
+
+@media (max-width: 375px){
+	
+	body, html {
+		height: 110%;
+	}
+}
+
+@media (max-width: 360px){
+	body, html {
+		width: 110%;
+		height: 110%;
+	}
+	.header_body, .content {
+		width: 320px;
+	}
+}
