@@ -1,0 +1,320 @@
+body, .wrapper {
+	width: 100%;
+	height: 100%;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	color: #686461;
+}
+
+.wrapper {
+	background-color: #E1DCE0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 100%;
+
+}
+
+.header {
+	width: 100%;
+	height: 80px;
+	background-color: #9E9B98;
+	display: flex;
+	justify-content: center;
+}
+
+.header_body {
+	width: 1018px;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.ava {
+	width: 120px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header_mail {
+	display: flex;
+	align-items: center;
+	position: relative;
+	height: 18px;
+}
+
+.header_mail:before {
+	content: '';
+	background: url(../img/mail.png) 0 0/100% no-repeat;
+	position: absolute;
+	left: -25px;
+	top: -2px;
+	width: 20px;
+	height: 20px;
+}
+
+.ava_text span,
+.header_mail span {
+	color: #E1DCE0;
+}
+
+.ava_text span {
+	font-weight: 600;
+}
+
+.ava_circle {
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	background-color: #BACBDB;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.ava_img {
+	width: 54px;
+	height: 54px;
+	background-color: #686461;
+	border-radius: 50%;
+	background: url(../img/me.jpg) 0 0/100% no-repeat;
+}
+
+.content {
+	display:  flex;
+	flex-direction: column;
+	width: 1018px;
+	flex: 1 1 auto;
+	justify-content: space-evenly;
+}
+
+.education, .contacts {
+	align-self: start;
+}
+
+.education_header span,
+.hobby_header span,
+.contacts_header span {
+	font-size: 28px;
+	font-weight: 600;
+}
+
+.education_header,
+.contacts_header {
+	width: 200px;
+	margin-bottom: 20px;
+	position: relative;
+}
+
+.education_header:hover::after{
+	transform: rotate(360deg);
+	transition-duration: 1s;
+}
+
+.education_header:after {
+	content: '';
+	position: absolute;
+	width: 45px;
+	height: 45px;
+	left: 160px;
+	top: -3px;
+	background: url(../img/university.png) 0 0/100% no-repeat;
+}
+
+.contacts_header:after {
+	content: '';
+	position: absolute;
+	width: 45px;
+	height: 45px;
+	left: 140px;
+	top: -13px;
+	background: url(../img/contacts.png) 0 0/100% no-repeat;
+}
+
+.contacts_header:hover::after{
+	transform: rotate(360deg);
+	transition-duration: 1s;
+}
+
+.faculty {
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 1.6;
+}
+
+.hobby {
+	align-self: end;
+	width: 350px;
+	height: 150px;
+	position: relative;
+}
+
+.hobby p,
+.hobby_header span {
+	position: absolute;
+
+}
+
+.hobby p span {
+	display: inline-block;
+	width: 100%;
+	height: 1px;
+	background-color: #686461;
+}
+
+.hobby_header span{
+	top: 60px;
+	left: 150px;
+}
+
+
+
+.hobby_basket {
+	left: 257px;
+	top: 10px;
+}
+
+.hobby_jogg {
+	top: 100px;
+	left: 50px;
+}
+
+.hobby_tennis {
+	top: 130px;
+	left: 220px;
+}
+
+.hobby_web:before {
+	content: '';
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	background: url(../img/www.png) 0 0/100% no-repeat;
+	left: -45px;
+	top: -3px;
+	transition-duration: 0.3s;
+}
+
+.hobby_web:hover::before {
+	transform: scale(1.2);
+	transition-duration: 0.3s;
+}
+
+.hobby_basket:before {
+	content: '';
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	background: url(../img/basketball.png) 0 0/100% no-repeat;
+	left: -35px;
+	top: -3px;
+	transition-duration: 0.3s;
+}
+
+.hobby_basket:hover::before {
+	transform: scale(1.2);
+	transition-duration: 0.3s;
+}
+
+.hobby_jogg:before {
+	content: '';
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	background: url(../img/jogging.png) 0 0/100% no-repeat;
+	left: -48px;
+	top: -10px;
+	transition-duration: 0.3s;
+}
+
+.hobby_jogg:hover::before {
+	transform: scale(1.2);
+	transition-duration: 0.3s;
+}
+
+.hobby_tennis:before {
+	content: '';
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	background: url(../img/table-tennis.png) 0 0/100% no-repeat;
+	left: -36px;
+	top: -3px;
+	transition-duration: 0.3s;
+}
+
+.hobby_tennis:hover::before {
+	transform: scale(1.2);
+	transition-duration: 0.3s;
+}
+
+.portfolio a {
+	color: #686461;
+	display: flex;
+	border: 3px solid rgba(206, 173, 109,0.5);
+	width: 340px;
+	height: 80px;
+	justify-content: center;
+	line-height: 80px;
+	border-radius: 50px;
+	font-size: 32px;
+	font-weight: 700;
+	box-shadow: 0 3px 4px 1px rgba(104, 100, 97,0.5);
+	position: relative;
+	transition-duration: 0.3s;
+	overflow: hidden;
+}
+
+.portfolio {
+	align-self: center;
+}
+
+a:visited {
+	color: #686461;
+}
+
+.portfolio a:hover {
+	box-shadow: none;
+	transition-duration: 0.3s;
+}
+
+.portfolio a:hover .line{
+	animation-play-state: paused;
+}
+
+.line {
+	position: absolute;
+	width: 50%;
+	height: 5%;
+	border-radius: 10px;
+	background-color: #BACBDB;
+	animation: line 8s ease-in-out infinite normal 0s none;
+
+}
+
+@keyframes line {
+  0%{
+    left:-50%;
+  }
+  20%{
+    left:100%;
+  }
+  40%{
+    top: 95%;
+    right:-50%;
+  }
+  60%{
+    left:-50%;
+    top: 95%;
+  }
+  100%{
+    left:-50%;
+    top: 95%;
+  }
+}
+
+.content, .header_body {
+	padding: 0 20px;
+}
