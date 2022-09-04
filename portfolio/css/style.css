@@ -10,8 +10,8 @@
 	align-items: center;
 	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 	-webkit-tap-highlight-color: transparent;
-
-		overflow: hidden;
+	position: relative;
+	overflow: hidden;
 }
 .header {
 	width: 100%;
@@ -97,6 +97,7 @@
 	background-color: #BACBDB;
 	position: relative;
 	box-shadow: 0 4px 4px 0 rgba(0,0,0,0.25);
+	border-radius: 10px;
 }
 
 
@@ -119,6 +120,8 @@
 	background: url(../img/clip.png) 0 0/100% no-repeat;
 	top: -15px;
 	left: 20px;
+
+	z-index: 2;
 }
 .ex:after {
 	content: '';
@@ -128,6 +131,8 @@
 	background: url(../img/clip.png) 0 0/100% no-repeat;
 	top: -15px;
 	left: 400px;
+	z-index: 2;
+
 }
 
 .example3{
@@ -153,4 +158,73 @@
 	transform: scale(0.8074);
 	left: 143px;
 	top: 50px;
+}
+
+
+
+.cover {
+	width: 457px;
+	height: 367px;
+	background-color: rgba(186, 203, 219, 0.97);
+	position: absolute;
+	top: 0;
+	transition-duration: 0.8s;
+	border-radius: 10px;
+	z-index: 1;
+}
+
+.ex:hover .cover{
+	height: 2%;
+	transition-duration: 0.3s;
+}
+
+.ex1_img {
+	width: 80%;
+	display: block;
+	height: 90%;
+	background: url(../img/сat1.jpg) 0px 0px/100% no-repeat;
+	margin: 0 auto;
+	border-radius: 5px;
+}
+
+.ex2_img {
+	width: 70%;
+	display: block;
+	height: 90%;
+	background: url(../img/orangeThing.png) 0 10px/100% no-repeat;
+	margin: 0 auto;
+	border-radius: 20px;
+}
+
+.ex3_img {
+	width: 80%;
+	display: block;
+	height: 90%;
+	background: url(../img/cat3.jpg) 0px 0/100% no-repeat;
+	margin: 0 auto;
+	border-radius: 5px;
+}
+.ex4_img {
+	width: 80%;
+	display: block;
+	height: 90%;
+	background: url(../img/cat4.jpg) 0px 0px/100% no-repeat;
+	margin: 0 auto;
+	border-radius: 5px;
+}
+.ex5_img {
+	width: 80%;
+	display: block;
+	height: 90%;
+	background: url(../img/cat5.jpg) 0px 0px/100% no-repeat;
+	margin: 0 auto;
+	border-radius: 5px;
+}
+.ex6_img {
+	width: 80%;
+	display: block;
+	height: 90%;
+	background: url(../img/cat6.jpg) 0px 0px/100% no-repeat;
+	margin: 0 auto;
+	border-radius: 5px;
 }
