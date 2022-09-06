@@ -84,8 +84,8 @@
 
 	.text_mail.active{
 		left: 0px;
-		transition-duration: 0.3s;
-		transition-timing-function: ease;
+		transition-duration: 0.7s;
+		transition-timing-function: cubic-bezier(0.68, -0.55, 0.0001, 1.29);
 
 	}
 	.icon_mail{
