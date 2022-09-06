@@ -173,7 +173,7 @@
 	background-color: rgba(186, 203, 219, 0.99);
 	position: absolute;
 	top: 0;
-	transition-duration: 0.7s;
+	transition-duration: 0.5s;
 	border-radius: 10px;
 	z-index: 1;
 	transition-timing-function: ease-in;
@@ -181,7 +181,7 @@
 
 .ex:hover .cover{
 	height: 2%;
-	transition-duration: 0.5s;
+	transition-duration: 0.3s;
 }
 
 .ex1_img {
