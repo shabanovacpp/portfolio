@@ -173,15 +173,15 @@
 	background-color: rgba(186, 203, 219, 0.99);
 	position: absolute;
 	top: 0;
-	transition-duration: 0.5s;
+	transition-duration: 0.7s;
 	border-radius: 10px;
 	z-index: 1;
-	
+	transition-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
 .ex:hover .cover{
 	height: 2%;
-	transition-duration: 0.3s;
+	transition-duration: 0.5s;
 }
 
 .ex1_img {
