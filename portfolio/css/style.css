@@ -176,7 +176,7 @@
 	transition-duration: 0.7s;
 	border-radius: 10px;
 	z-index: 1;
-	transition-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+	transition-timing-function: ease-in;
 }
 
 .ex:hover .cover{
