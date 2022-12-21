@@ -9,7 +9,7 @@
 
 @media (max-width: 767px){
 	.header_body, .content {
-		width: 95%;
+		width: 85%;
 	}
 
 	.education,
@@ -82,22 +82,74 @@
 	.portfolio {
 		margin: 30px 10px;
 	}
+	
 
-	.content{
-	}
+	
 }
 
 @media (max-width: 450px){
+	
+	
 	.header_mail {
-		display:  none;
+		position: static;
+	}
+	.text_mail{
+		display: block;
+		background-color: #9E9B98;
+		height: 30px;
+		width: 100%;
+		position: absolute;
+		top: 80px;
+		left: 150%;
+		text-align: center;
+		transition-duration: 0.3s;
+		z-index: 2;
+
 	}
 	
+
+	.text_mail.active{
+		left: 0px;
+		transition-duration: 0.7s;
+		transition-timing-function: cubic-bezier(0.68, -0.55, 0.0001, 1.29);
+
+
+	}
+	.icon_mail{
+		display: inline-block;
+		width: 25px;
+		height: 25px;
+		background: url(../img/mail.png) 0 0/100% no-repeat;
+		transition-duration: 0.3s;
+	}
+
+	.icon_mail.active{
+		background: url(../img/mail_active.png) 0 0/100% no-repeat;
+		transition-duration: 0.3s;
+	}
+	
+	.header_mail:before {
+		display: none;
+	}
+
+	.header {
+		position: relative;
+		z-index: 3;
+	}
+
+	.header_body{
+		position: relative;
+		z-index: 4;
+
+	}
+
+	.content {
+		position: relative;
+		z-index: 1;
+	}
 }
 
-@media (max-width: 375px){
-	
-	
-}
+
 
 @media (max-width: 360px){
 	body, html {
